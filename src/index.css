@@ -1,5 +1,24 @@
 @import-normalize; /* bring in normalize.css styles */
-
+:root {
+  --main-width: 450px;
+  --border: 3px solid rgb(221, 215, 215);
+  --transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  --shadow: 0px 5px 5px 2px rgba(34, 60, 80, 0.42);
+  /* colors */
+  --main-bgc: rgba(236, 235, 245, 0.911);
+  --second-bgc: #fff;
+  --profile-bgc: rgba(236, 235, 245, 0.911);
+  --online-color: rgba(93, 179, 93, 0.685);
+  --offline-color: rgba(209, 124, 124, 0.884);
+  --main-color: grey;
+  --profile-fbgc: rgb(221, 215, 215);
+  --profile-stats-bgc: rgb(238, 234, 234);
+  --accent: rgb(0, 153, 255);
+  --th-bgc: rgba(116, 180, 233, 0.767);
+  --text-color: #000;
+  /* fonts */
+  --main-font: Georgia, 'Times New Roman', Times, serif;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

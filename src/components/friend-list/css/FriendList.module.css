@@ -1,0 +1,12 @@
+.FriendList {
+  width: var(--main-width);
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-bgc);
+  border: var(--border);
+  border-radius: 3%;
+}

@@ -1,0 +1,27 @@
+.TransactionHistory {
+  width: var(--main-width);
+  margin: 20px auto;
+  font-family: var(--main-font);
+  font-size: 15px;
+  font-weight: normal;
+  color: var(--accent);
+  background-color: var(--profile-bgc);
+  border: var(--border);
+}
+
+.thead {
+  background-color: var(--th-bgc);
+  color: var(--second-bgc);
+  font-weight: bolder;
+}
+.tbody {
+  color: var(--main-color);
+}
+.td {
+  text-align: center;
+}
+.th {
+  width: 33.333%;
+  height: 100%;
+  padding: 10px;
+}
