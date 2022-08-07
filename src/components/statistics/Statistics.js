@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styles from './css/Statistics.module.css';
 import { randomColor } from './randomColor.js';
 
-const Statistics = ({ stats, title }) => (
+const Statistics = ({ stats, title = '' }) => (
   <section className={styles.statistics}>
     {title && <h2 className={styles.title}>{title}</h2>}
 
@@ -21,10 +21,6 @@ const Statistics = ({ stats, title }) => (
   </section>
 );
 
-Statistics.defaultProps = {
-  title: '',
-};
-
 Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
@@ -32,7 +28,7 @@ Statistics.propTypes = {
       id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
       percentage: PropTypes.number.isRequired,
-    }),
+    })
   ).isRequired,
 };
 

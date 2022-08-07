@@ -1,6 +1,17 @@
 import PropTypes from 'prop-types';
 import defaultImg from 'components/defaultImg.jpg';
-import s from './css/Profile.module.css';
+import {
+  Card,
+  Description,
+  Avatar,
+  Username,
+  Tag,
+  Location,
+  Item,
+  Stats,
+  Label,
+  Quantity,
+} from 'components/profile/Profile.styled';
 
 const Profile = ({
   username,
@@ -12,29 +23,29 @@ const Profile = ({
   likes,
 }) => {
   return (
-    <div className={s.profile}>
-      <div className={s.description}>
-        <img src={avatar} alt={username} className={s.avatar} width="100" />
-        <p className={s.username}>{username}</p>
-        <p className={s.tag}>@{tag}</p>
-        <p className={s.location}>{location}</p>
-      </div>
+    <Card>
+      <Description>
+        <Avatar src={avatar} alt={username} width="100" />
+        <Username>{username}</Username>
+        <Tag>@{tag}</Tag>
+        <Location>{location}</Location>
+      </Description>
 
-      <ul className={s.stats}>
-        <li className={s.item}>
-          <span className={s.label}>Followers</span>
-          <span className={s.quantity}>{followers}</span>
-        </li>
-        <li className={s.item}>
-          <span className={s.label}>Views</span>
-          <span className={s.quantity}>{views}</span>
-        </li>
-        <li className={s.item}>
-          <span className={s.label}>Likes</span>
-          <span className={s.quantity}>{likes}</span>
-        </li>
-      </ul>
-    </div>
+      <Stats>
+        <Item>
+          <Label>Followers</Label>
+          <Quantity>{followers}</Quantity>
+        </Item>
+        <Item>
+          <Label>Views</Label>
+          <Quantity>{views}</Quantity>
+        </Item>
+        <Item>
+          <Label>Likes</Label>
+          <Quantity>{likes}</Quantity>
+        </Item>
+      </Stats>
+    </Card>
   );
 };
 

@@ -1,9 +1,7 @@
 .statistics {
-  width: var(--main-width);
   margin: 0 auto;
   background-color: var(--profile-bgc);
   border: var(--border);
-  border-radius: 3%;
 }
 .title {
   margin: 0;
@@ -32,11 +30,6 @@
   font-weight: 900;
   outline: 3px solid var(--profile-fbgc);
   color: var(--second-bgc);
-  transform: perspective(40px);
-  transition: var(--transition);
-}
-.statistics:hover .item {
-  transform: rotate3d(0, 1, 0, 40deg) perspective(100px);
 }
 .label {
   margin-bottom: 10px;
