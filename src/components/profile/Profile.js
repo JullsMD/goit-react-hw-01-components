@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
-import defaultImg from 'components/defaultImg.jpg';
+import defaultImg from '../defaultImg.jpg';
+
 import {
+  Wrapper,
   Card,
-  Description,
   Avatar,
   Username,
   Tag,
@@ -23,13 +24,13 @@ const Profile = ({
   likes,
 }) => {
   return (
-    <Card>
-      <Description>
+    <Wrapper>
+      <Card>
         <Avatar src={avatar} alt={username} width="100" />
         <Username>{username}</Username>
         <Tag>@{tag}</Tag>
         <Location>{location}</Location>
-      </Description>
+      </Card>
 
       <Stats>
         <Item>
@@ -45,7 +46,7 @@ const Profile = ({
           <Quantity>{likes}</Quantity>
         </Item>
       </Stats>
-    </Card>
+    </Wrapper>
   );
 };
 

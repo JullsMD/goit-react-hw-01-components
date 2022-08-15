@@ -1,21 +1,19 @@
 import styled from '@emotion/styled';
 
-export const Card = styled.div`
+export const Wrapper = styled.section`
   width: var(--main-width);
-  margin: 16px auto;
-  padding: 16px 0;
-
+  margin: 0 auto;
+  padding: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   background-color: var(--profile-bgc);
-  border: 3px solid var(--profile-fbgc);
+  border: 1px solid var(--profile-fbgc);
 `;
 
-export const Description = styled.div`
-  width: 80%;
+export const Card = styled.div`
+  width: 100%;
   padding-top: 32px;
   display: flex;
   flex-direction: column;
@@ -25,6 +23,7 @@ export const Description = styled.div`
   outline: 1px solid var(--main-color);
 `;
 export const Avatar = styled.img`
+  display: inline-block;
   border: 2px solid var(--main-color);
   border-radius: 50%;
   transition: var(--transition);
@@ -35,18 +34,21 @@ export const Avatar = styled.img`
 `;
 
 export const Username = styled.p`
-  color: var(--text-color);
   margin: 32px 0 0 0;
+
   font-family: var(--main-font);
   font-weight: bolder;
+
+  color: var(--text-color);
+
   :hover {
     color: var(--accent);
     cursor: pointer;
   }
 `;
 export const Tag = styled.p`
-  color: var(--main-color);
   margin: 16px 0 0 0;
+  color: var(--main-color);
   :hover {
     color: var(--accent);
     cursor: pointer;
@@ -61,7 +63,7 @@ export const Location = styled.p`
 `;
 
 export const Stats = styled.ul`
-  width: 80%;
+  width: 100%;
   display: flex;
   align-items: center;
   font-family: var(--main-font);
@@ -70,8 +72,10 @@ export const Stats = styled.ul`
   background-color: var(--profile-stats-bgc);
 `;
 
-export const Item = styled.div`
+export const Item = styled.li`
   width: 33.333%;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   outline: 1px solid var(--main-color);
   :hover {

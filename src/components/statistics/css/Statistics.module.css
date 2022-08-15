@@ -1,4 +1,5 @@
 .statistics {
+  width: 50%;
   margin: 0 auto;
   background-color: var(--profile-bgc);
   border: var(--border);
