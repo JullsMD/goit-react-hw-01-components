@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import defaultImg from 'components/defaultImg.jpg';
-import styles from './css/FriendListItem.module.css';
+import styles from './FriendListItem.module.css';
 import { FaPaw } from 'react-icons/fa';
 
 const FriendListItem = ({ avatar = defaultImg, isOnline, name }) => {
